@@ -22,11 +22,16 @@
     &__item{
         float: left;
         position: relative;
-        width: calc(50% - 1.066666666666667em);
-        padding-bottom: calc(50% - 1.066666666666667em);
+        width: calc(100% - 1.066666666666667em);
+        padding-bottom: calc(100% - 1.066666666666667em);
         margin: em(8);
         background-color: #fff;
         overflow: hidden;
+
+        @include mq(550px){
+            width: calc(50% - 1.066666666666667em);
+            padding-bottom: calc(50% - 1.066666666666667em);
+        }
 
         @include mq(1279px){
             width: calc(33.33% - 1.066666666666667em);
