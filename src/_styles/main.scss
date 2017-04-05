@@ -88,19 +88,28 @@
         left: em(10);
         right: em(10);
         border-radius: 0 0 em(10) em(10);
-        padding: em(10) em(15) em(20) em(54);
+        padding: em(10) em(15) em(20) em(15);
+
+        @include mq(1500px){
+            padding: em(10) em(15) em(20) em(54);
+        }
     }
 
     // {{instagram__text}}
     &__text{
         margin: 0;
         color: #fff;
-        height: 3.75em;
+        height: 3.5em;
         font-weight: 600;
-        font-size: em(16);
+        font-size: em(12);
         overflow: hidden;
         line-height: 1.25;
         letter-spacing: 0.015em;
+
+        @include mq(1500px){
+            height: 3.75em;
+            font-size: em(16);
+        }
     }
 
     // {{instagram__smile}}
@@ -110,6 +119,11 @@
         left: em(15);
         width: em(26);
         height: em(26);
+        display: none;
+
+        @include mq(1500px){
+            display: inline-block;
+        }
     }
 }
 
@@ -139,7 +153,11 @@
         left: 0;
         right: 0;
         bottom: 0;
-        padding: em(15) em(34) em(50);
+        padding: em(15) em(15) em(50);
+
+        @include mq(1500px){
+         padding: em(15) em(34) em(50);
+        }
 
         &:before{
             content: '';
@@ -180,11 +198,17 @@
     // {{cta__places}}
     &__places{
         position: absolute;
-        left: em(20);
-        bottom: em(14);
+        left: em(12);
+        bottom: em(8);
         font-weight: 600;
         color: #6c9b45;
-        font-size: em(17);
+        font-size: em(12);
+
+        @include mq(1500px){
+            left: em(20);
+            bottom: em(14);
+            font-size: em(17);
+        }
     }
 }
 
@@ -214,7 +238,11 @@
         left: 0;
         right: 0;
         bottom: 0;
-        padding: em(45) em(88) em(50);
+        padding: em(0) em(25) em(25);
+
+        @include mq(1500px){
+            padding: em(45) em(88) em(50);
+        }
 
         &:before{
             content: '';
@@ -229,21 +257,34 @@
         }
 
         .btn__sky-blue{
-            font-size: em(17);
+            font-size: em(14);
             font-weight: 600;
             padding: em(9) em(44);
+
+            @include mq(1500px){
+                font-size: em(17);
+            }
         }
     }
 
     // {{promotion__title}}
     &__title{
-        font-size: em(20);
+        font-size: em(16);
+
+        @include mq(1500px){
+            font-size: em(20);
+        }
     }
 
     // {{promotion__text}}
     &__text{
-        font-size: em(17);
+        font-size: em(14);
         line-height: 1.5;
-        margin-bottom: em(32);
+        margin-bottom: em(15);
+
+        @include mq(1500px){
+            font-size: em(17);
+            margin-bottom: em(32);
+        }
     }
 }
