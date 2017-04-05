@@ -1,145 +1,263 @@
 extends _layouts/base
 
 block content
-    div(style="display:flex;width:100%;")
-        div(style="width:516px")
-        div.site__container(style="flex: 1 1 auto;width: auto;display: block;overflow: hidden;")
-            section.site__page
-                main.site__main(role="main")
-                    section.articles
-                        article.article
-                            figure.article__featured
-                                img.article__image(src='http://www.mysmartgarden.org.au/assets/images/content/vegetable-patch.jpg' alt='')
-                            section.article__content
-                                span.article__category
-                                    img.img__category(src='http://www.mysmartgarden.org.au/assets/images/brand/meet-our-growers.png', alt='')
-                                h2.article__title(itemprop='name') Meet the Drought Busters!
-                                p
-                                a.btn__sky-blue(href='#') Read more
-                    section.forums
-                        h2.forums__header
-                            span Hello Smart Gardener
-                        article.forum__post(itemscope='', itemtype='http://schema.org/Article')
-                            h3.forum__title(itemprop='name')
-                                a.forum__link(href='/forum/?targetframe=/yaf/default.aspx?g=posts&t=71', rel='bookmark')
-                                    | Welcome to My Smart Garden
-                            p(itemprop='description')
-                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin lobortis dui ut finibus. Mauris a metus vitae est cursus accumsan sed a sapien. Aliquam pharetra ullamcorper tincidunt. Nullam vel risus in magna efficitur volutpat in ac eros. Duis at egestas libero, vitae pulvinar leo. Nulla in dui ultrices, varius dui ac, porttitor odio. Integer finibus ante at mauris molestie fringilla. Fusce vitae justo vel neque cursus lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer tincidunt mi ac enim feugiat, pulvinar efficitur arcu consequat.
-                    section.grid
-                        div.grid__item
-                            div.cta
-                                div.cta__img(style="background-image:url(https://placeimg.com/409/500/nature)")
-                                div.cta__bottom
-                                    h2.cta__title Event title
-                                    p.cta__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                                    span.cta__places 60 places left
-                                    a.btn__sky-blue(href="#") Sign up
-                        div.grid__item
-                            div.cta
-                                div.cta__img(style="background-image:url(https://placeimg.com/408/500/nature)")
-                                div.cta__bottom
-                                    h2.cta__title Event title
-                                    p.cta__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                                    span.cta__places 60 places left
-                                    a.btn__sky-blue(href="#") Sign up
-                        div.grid__item
-                            div.cta
-                                div.cta__img(style="background-image:url(https://placeimg.com/407/500/nature)")
-                                div.cta__bottom
-                                    h2.cta__title Event title
-                                    p.cta__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                                    span.cta__places 60 places left
-                                    a.btn__sky-blue(href="#") Sign up
-                    section.grid
-                        div.grid__item
-                            a.instagram(href="#")
-                                img.instagram__icon(src="./images/icon-instagram.png")
-                                div.instagram__img(style="background-image:url(https://placeimg.com/500/500/nature)")
-                                div.instagram__bottom
-                                    img.instagram__smile(src="./images/icon-smile.png")
-                                    p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
-                        div.grid__item
-                            a.instagram(href="#")
-                                img.instagram__icon(src="./images/icon-instagram.png")
-                                div.instagram__img(style="background-image:url(https://placeimg.com/501/500/nature)")
-                                div.instagram__bottom
-                                    img.instagram__smile(src="./images/icon-smile.png")
-                                    p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
-                        div.grid__item
-                            a.grid__link(href="#")
-                                img(src="./images/cta1.jpg")
-                        div.grid__item
-                            a.grid__link(href="#")
-                                img(src="./images/cta2.jpg")
-                        div.grid__item
-                            a.instagram(href="#")
-                                img.instagram__icon(src="./images/icon-instagram.png")
-                                div.instagram__img(style="background-image:url(https://placeimg.com/502/500/nature)")
-                                div.instagram__bottom
-                                    img.instagram__smile(src="./images/icon-smile.png")
-                                    p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
-                        div.grid__item
-                            a.instagram(href="#")
-                                img.instagram__icon(src="./images/icon-instagram.png")
-                                div.instagram__img(style="background-image:url(https://placeimg.com/503/500/nature)")
-                                div.instagram__bottom
-                                    img.instagram__smile(src="./images/icon-smile.png")
-                                    p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
-                        div.grid__item
-                            a.instagram(href="#")
-                                img.instagram__icon(src="./images/icon-instagram.png")
-                                div.instagram__img(style="background-image:url(https://placeimg.com/510/500/nature)")
-                                div.instagram__bottom
-                                    img.instagram__smile(src="./images/icon-smile.png")
-                                    p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
-                        div.grid__item.grid__item--large
-                            div.promotion
-                                div.promotion__img(style="background-image:url(https://placeimg.com/1000/500/nature)")
-                                div.promotion__bottom
-                                    h2.promotion__title Promotion title goes here
-                                    p.promotion__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a dignissim sem. Phasellus nec rhoncus tortor. Duis tempus posuere lorem sed volutpat. Morbi et leo augue. Donec volutpat est libero, consectetur.
-                                    a.btn__sky-blue(href="#") Learn more
-                        div.grid__item
-                            a.grid__link(href="#")
-                                img(src="./images/cta3.jpg")
-                        div.grid__item
-                            a.instagram(href="#")
-                                img.instagram__icon(src="./images/icon-instagram.png")
-                                div.instagram__img(style="background-image:url(https://placeimg.com/504/500/nature)")
-                                div.instagram__bottom
-                                    img.instagram__smile(src="./images/icon-smile.png")
-                                    p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
-                        div.grid__item
-                            a.grid__link(href="#")
-                                img(src="./images/cta4.jpg")
-                        div.grid__item
-                            a.instagram(href="#")
-                                img.instagram__icon(src="./images/icon-instagram.png")
-                                div.instagram__img(style="background-image:url(https://placeimg.com/505/500/nature)")
-                                div.instagram__bottom
-                                    img.instagram__smile(src="./images/icon-smile.png")
-                                    p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
-                        div.grid__item
-                            a.instagram(href="#")
-                                img.instagram__icon(src="./images/icon-instagram.png")
-                                div.instagram__img(style="background-image:url(https://placeimg.com/506/500/nature)")
-                                div.instagram__bottom
-                                    img.instagram__smile(src="./images/icon-smile.png")
-                                    p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
-                        div.grid__item
-                            a.instagram(href="#")
-                                img.instagram__icon(src="./images/icon-instagram.png")
-                                div.instagram__img(style="background-image:url(https://placeimg.com/507/500/nature)")
-                                div.instagram__bottom
-                                    img.instagram__smile(src="./images/icon-smile.png")
-                                    p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
-                        div.grid__item.grid__item--large
-                            div.promotion
-                                div.promotion__img(style="background-image:url(https://placeimg.com/1001/500/nature)")
-                                div.promotion__bottom
-                                    h2.promotion__title Planets align, Costa and Vasili talk shop
-                                    p.promotion__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a dignissim sem. Phasellus nec rhoncus tortor. Duis tempus posuere lorem sed volutpat. Morbi et leo augue. Donec volutpat est libero, consectetur.
-                                    a.btn__sky-blue(href="#") Learn more
-                        div.grid__item
-                            a.grid__link(href="#")
-                                img(src="./images/cta5.jpg")
+    div.site__container
+        header.site__header(role='banner')
+            // LOGO
+            section.site__logo
+                .site__name
+                    a(href='/')
+                        span my
+                        span smart
+                        span.txt__brand garden
+            // end of LOGO
+            // MAIN NAVIGATION
+            nav.nav__main(role='navigation')
+                // MOBILE TOGGLE BUTTON
+                a.nav__toggle(href='javascript:void(0)')
+                    i.icon__menu
+                    span Menu
+                // end of MOBILE TOGGLE BUTTON
+                // TOP LEVEL PAGES
+                ul.nav__sections
+                    li.nav__item
+                        a.nav__link.double-height(href='/') Home
+                    li.nav__item
+                        a.nav__link.double-height(href='/en/Forum') Forum
+                    li.nav__item
+                        a.nav__link.double-height(href='/en/Resources') Resources
+                    li.nav__item
+                        a.nav__link.double-height(href='/en/Workshops-and-events') Events
+                    li.nav__item
+                        a.nav__link.triple-height(href='/en/Gardening-towards-2050') Gardening towards 2050
+                    li.nav__item
+                        a.nav__link.double-height(href='/en/Newsletter') Newsletter
+                // end of TOP LEVEL PAGES
+            // end of MAIN NAVIGATION
+
+        section.site__page
+            aside.site__aside
+                h1.brand__title
+                    span.txt__black.txt__bold
+                        | is a 
+                        span.brand__pow.txt__green free
+                        |  program
+                    span.txt__black that will help you
+                    span.txt__food
+                        a(href='/resources/food')
+                            i.brand__onion
+                        |  grow food,
+                    span.txt__shelter
+                        | shelter your 
+                        a(href='/resources/shelter')
+                            i.brand__tree
+                        |  home from the sun 
+                        i.brand__sun
+                        |  and wind,
+                    span.txt__habitat
+                        | create homes 
+                        a(href='/resources/habitat')
+                            i.brand__birdhouse
+                        |  for local wildlife,
+                    span.txt__water
+                        a(href='/resources/water')
+                            i.brand__cloud
+                        |  use water wisely
+                    span.txt__waste.txt__semi-bold
+                        | and recycle wastes. 
+                        a(href='/resources/waste')
+                            i.brand__recycle
+                a.btn__green(href='/en/Forum') Join our community
+                .newsletter
+                    h3 Sign up for our newsletter
+                    form#newsletter-sign-up.validation(action='/api/sitecore/Home/SignUpNewsletter', method='post', role='form', novalidate='novalidate')
+                        input#scController(name='scController', type='hidden', value='Home')
+                        input#scAction(name='scAction', type='hidden', value='SignUpNewsletter')
+                        label.newsletter__label(for='email') Email address
+                        .form__input
+                            input#email.newsletter__input.placeholder(name='emailaddress', placeholder='your email address', type='email', value='')
+                        .newsletter__extra-fields.is-hidden
+                            label.newsletter__label(for='first-name') First name
+                            .form__input
+                                input#first-name.newsletter__input.placeholder(name='firstName', placeholder='your first name', type='text', value='')
+                            label.newsletter__label(for='surname') Surname
+                            .form__input
+                                input#surname.newsletter__input.placeholder(name='lastName', placeholder='your surname', type='text', value='')
+                            label.newsletter__label(for='postcode') Postcode
+                            .form__input
+                                input#postcode.newsletter__input.placeholder(name='postcode', placeholder='your postcode', type='text', value='')
+                            input(type='submit', value='Sign up')
+                footer.site__footer
+                    // Contains share, global and partner links.
+                    // SHARE PAGE
+                    aside.share
+                        h2.share__title
+                            | Please 
+                            span.brand__speech share
+                            |  with your gardening friends...
+                        // FACEBOOK
+                        a.share__btn(title='Share on Facebook', href='https://www.facebook.com/sharer/sharer.php?t=My Smart Garden&u=http://www.mysmartgarden.org.au/en', onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;")
+                            img.facebook(src='/assets/images/brand/facebook.png', alt='Facebook logo')
+                        // TWITTER
+                        a.share__btn(title='Tweet link on Twitter', href='https://twitter.com/share?text= My Smart Garden&amp;url=http://www.mysmartgarden.org.au/en', onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;")
+                            img.twitter(src='/assets/images/brand/twitter.png', alt='Twitter logo')
+                        // EMAIL
+                        a.share__btn(title='Email this to your friends', href='mailto:?subject=You may like this page - My Smart Garden&body=I saw this link http://www.mysmartgarden.org.au/en and thought you may be interested')
+                            img.email(src='/assets/images/brand/email.png', alt='Open envelope')
+                    // end of SHARE PAGE
+                    // ABOUT THIS SITE
+                    ul.footer__items
+                        li.footer__item
+                            a.footer__link(href='/en/Contact') Contact Us
+                        li.footer__item
+                            a.footer__link(href='/en/About-Us') About Us
+                        li.footer__item
+                            a.footer__link(href='/en/Privacy-Statement') Privacy Statement
+                    section.site__partners
+                        p
+                            | Our free events run in inner-west Melbourne, Australia, but are open to everyone!
+                        p My Smart Garden is a proud initiative of...
+                        section.img__cc-logos
+                            a.img__cc-logo.moonee-valley-cc(href='http://www.mvcc.vic.gov.au', target='_blank')
+                            a.img__cc-logo.hobsons-bay-cc(href='http://www.hobsonsbay.vic.gov.au', target='_blank')
+                            a.img__cc-logo.maribyrnong-cc(href='http://www.maribyrnong.vic.gov.au', target='_blank')
+                    // end of ABOUT THIS SITE
+
+            main.site__main(role="main")
+                section.articles
+                    article.article
+                        figure.article__featured
+                            img.article__image(src='http://www.mysmartgarden.org.au/assets/images/content/vegetable-patch.jpg' alt='')
+                        section.article__content
+                            span.article__category
+                                img.img__category(src='http://www.mysmartgarden.org.au/assets/images/brand/meet-our-growers.png', alt='')
+                            h2.article__title(itemprop='name') Meet the Drought Busters!
+                            p
+                            a.btn__sky-blue(href='#') Read more
+                section.forums
+                    h2.forums__header
+                        span Hello Smart Gardener
+                    article.forum__post(itemscope='', itemtype='http://schema.org/Article')
+                        h3.forum__title(itemprop='name')
+                            a.forum__link(href='/forum/?targetframe=/yaf/default.aspx?g=posts&t=71', rel='bookmark')
+                                | Welcome to My Smart Garden
+                        p(itemprop='description')
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin lobortis dui ut finibus. Mauris a metus vitae est cursus accumsan sed a sapien. Aliquam pharetra ullamcorper tincidunt. Nullam vel risus in magna efficitur volutpat in ac eros. Duis at egestas libero, vitae pulvinar leo. Nulla in dui ultrices, varius dui ac, porttitor odio. Integer finibus ante at mauris molestie fringilla. Fusce vitae justo vel neque cursus lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer tincidunt mi ac enim feugiat, pulvinar efficitur arcu consequat.
+                section.grid
+                    div.grid__item
+                        div.cta
+                            div.cta__img(style="background-image:url(https://placeimg.com/409/500/nature)")
+                            div.cta__bottom
+                                h2.cta__title Event title
+                                p.cta__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                span.cta__places 60 places left
+                                a.btn__sky-blue(href="#") Sign up
+                    div.grid__item
+                        div.cta
+                            div.cta__img(style="background-image:url(https://placeimg.com/408/500/nature)")
+                            div.cta__bottom
+                                h2.cta__title Event title
+                                p.cta__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                span.cta__places 60 places left
+                                a.btn__sky-blue(href="#") Sign up
+                    div.grid__item
+                        div.cta
+                            div.cta__img(style="background-image:url(https://placeimg.com/407/500/nature)")
+                            div.cta__bottom
+                                h2.cta__title Event title
+                                p.cta__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                span.cta__places 60 places left
+                                a.btn__sky-blue(href="#") Sign up
+                section.grid
+                    div.grid__item
+                        a.instagram(href="#")
+                            img.instagram__icon(src="./images/icon-instagram.png")
+                            div.instagram__img(style="background-image:url(https://placeimg.com/500/500/nature)")
+                            div.instagram__bottom
+                                img.instagram__smile(src="./images/icon-smile.png")
+                                p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
+                    div.grid__item
+                        a.instagram(href="#")
+                            img.instagram__icon(src="./images/icon-instagram.png")
+                            div.instagram__img(style="background-image:url(https://placeimg.com/501/500/nature)")
+                            div.instagram__bottom
+                                img.instagram__smile(src="./images/icon-smile.png")
+                                p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
+                    div.grid__item
+                        a.grid__link(href="#")
+                            img(src="./images/cta1.jpg")
+                    div.grid__item
+                        a.grid__link(href="#")
+                            img(src="./images/cta2.jpg")
+                    div.grid__item
+                        a.instagram(href="#")
+                            img.instagram__icon(src="./images/icon-instagram.png")
+                            div.instagram__img(style="background-image:url(https://placeimg.com/502/500/nature)")
+                            div.instagram__bottom
+                                img.instagram__smile(src="./images/icon-smile.png")
+                                p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
+                    div.grid__item
+                        a.instagram(href="#")
+                            img.instagram__icon(src="./images/icon-instagram.png")
+                            div.instagram__img(style="background-image:url(https://placeimg.com/503/500/nature)")
+                            div.instagram__bottom
+                                img.instagram__smile(src="./images/icon-smile.png")
+                                p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
+                    div.grid__item
+                        a.instagram(href="#")
+                            img.instagram__icon(src="./images/icon-instagram.png")
+                            div.instagram__img(style="background-image:url(https://placeimg.com/510/500/nature)")
+                            div.instagram__bottom
+                                img.instagram__smile(src="./images/icon-smile.png")
+                                p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
+                    div.grid__item.grid__item--large
+                        div.promotion
+                            div.promotion__img(style="background-image:url(https://placeimg.com/1000/500/nature)")
+                            div.promotion__bottom
+                                h2.promotion__title Promotion title goes here
+                                p.promotion__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a dignissim sem. Phasellus nec rhoncus tortor. Duis tempus posuere lorem sed volutpat. Morbi et leo augue. Donec volutpat est libero, consectetur.
+                                a.btn__sky-blue(href="#") Learn more
+                    div.grid__item
+                        a.grid__link(href="#")
+                            img(src="./images/cta3.jpg")
+                    div.grid__item
+                        a.instagram(href="#")
+                            img.instagram__icon(src="./images/icon-instagram.png")
+                            div.instagram__img(style="background-image:url(https://placeimg.com/504/500/nature)")
+                            div.instagram__bottom
+                                img.instagram__smile(src="./images/icon-smile.png")
+                                p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
+                    div.grid__item
+                        a.grid__link(href="#")
+                            img(src="./images/cta4.jpg")
+                    div.grid__item
+                        a.instagram(href="#")
+                            img.instagram__icon(src="./images/icon-instagram.png")
+                            div.instagram__img(style="background-image:url(https://placeimg.com/505/500/nature)")
+                            div.instagram__bottom
+                                img.instagram__smile(src="./images/icon-smile.png")
+                                p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
+                    div.grid__item
+                        a.instagram(href="#")
+                            img.instagram__icon(src="./images/icon-instagram.png")
+                            div.instagram__img(style="background-image:url(https://placeimg.com/506/500/nature)")
+                            div.instagram__bottom
+                                img.instagram__smile(src="./images/icon-smile.png")
+                                p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
+                    div.grid__item
+                        a.instagram(href="#")
+                            img.instagram__icon(src="./images/icon-instagram.png")
+                            div.instagram__img(style="background-image:url(https://placeimg.com/507/500/nature)")
+                            div.instagram__bottom
+                                img.instagram__smile(src="./images/icon-smile.png")
+                                p.instagram__text @uberjoi Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, ...
+                    div.grid__item.grid__item--large
+                        div.promotion
+                            div.promotion__img(style="background-image:url(https://placeimg.com/1001/500/nature)")
+                            div.promotion__bottom
+                                h2.promotion__title Planets align, Costa and Vasili talk shop
+                                p.promotion__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a dignissim sem. Phasellus nec rhoncus tortor. Duis tempus posuere lorem sed volutpat. Morbi et leo augue. Donec volutpat est libero, consectetur.
+                                a.btn__sky-blue(href="#") Learn more
+                    div.grid__item
+                        a.grid__link(href="#")
+                            img(src="./images/cta5.jpg")
