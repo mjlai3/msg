@@ -1,18 +1,9 @@
 // Normalize Styles
-@import 'node_modules/normalize.css/normalize';
+// @import 'node_modules/normalize.css/normalize';
 
-// Import Modules
-// @import '../_modules/link/link';
-
-// Box sizing partial styles:
-// Apply a natural box layout model to all elements
-*,
-*:before,
-*:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
+// Import SCSS
+@import './_functions.scss';
+@import './_mixin.scss';
 
 // Remove dotted lines on the right and left of Forum title
 // Overwriting original CSS
@@ -25,20 +16,25 @@
 // New CSS
 .grid{
     overflow: hidden;
-    margin: 40px 8px 0;
+    margin: em(40) em(8) 0;
+
+    // {{grid__item}}
     &__item{
         float: left;
         position: relative;
-        width: calc(33.33% - 20px);
-        padding-bottom: calc(33.33% - 20px);
-        margin: 10px;
+        width: calc(33.33% - 1.066666666666667em);
+        padding-bottom: calc(33.33% - 1.066666666666667em);
+        margin: em(8);
         background-color: #fff;
         overflow: hidden;
 
+        // {{grid__item--large}}
         &--large{
-            width: calc(66.66% - 20px);
+            width: calc(66.66% - 1.066666666666667em);
         }
     }
+
+    // {{grid__link}}
     &__link{
         position: absolute;
         top: 0;
@@ -58,53 +54,62 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 12px;
+    padding: em(10);
 
+    // {{instagram__icon}}
     &__icon{
         position: absolute;
-        top: 20px;
-        left: 15px;
+        top: em(20);
+        left: em(15);
         z-index: 1;
+        width: em(38);
+        height: em(38);
     }
 
+    // {{instagram__img}}
     &__img{
         position: absolute;
         overflow: hidden;
-        border-radius: 10px;
-        top: 12px;
-        left: 12px;
-        right: 12px;
-        bottom: 12px;
+        border-radius: em(10);
+        top: em(10);
+        left: em(10);
+        right: em(10);
+        bottom: em(10);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
+    // {{instagram__bottom}}
     &__bottom{
         position: absolute;
         background-color: #1F8E95;
-        bottom: 12px;
-        left: 12px;
-        right: 12px;
-        border-radius: 0 0 10px 10px;
-        padding: 10px 15px 20px 70px;
+        bottom: em(10);
+        left: em(10);
+        right: em(10);
+        border-radius: 0 0 em(10) em(10);
+        padding: em(10) em(15) em(20) em(54);
     }
 
+    // {{instagram__text}}
     &__text{
         margin: 0;
         color: #fff;
         height: 3.75em;
         font-weight: 600;
-        font-size: 1.5em;
+        font-size: em(16);
         overflow: hidden;
         line-height: 1.25;
         letter-spacing: 0.015em;
     }
 
+    // {{instagram__smile}}
     &__smile{
         position: absolute;
-        top: 10px;
-        left: 15px;
+        top: em(10);
+        left: em(15);
+        width: em(26);
+        height: em(26);
     }
 }
 
@@ -114,6 +119,7 @@
     height: 100%;
     text-align: center;
 
+    // {{cta__img}}
     &__img{
         background-position: top;
         background-repeat: no-repeat;
@@ -125,6 +131,7 @@
         bottom: 0;
     }
 
+    // {{cta__bottom}}
     &__bottom{
         background-color: white;
         text-align: center;
@@ -132,7 +139,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        padding: 15px 34px 50px;
+        padding: em(15) em(34) em(50);
 
         &:before{
             content: '';
@@ -141,39 +148,43 @@
             bottom: 100%;
             left: 0;
             right: 0;
-            height: 50px;
+            height: em(50);
             background-image: url(../images/paper.png);
             background-repeat: no-repeat;
         }
 
         .btn__sky-blue{
             position: absolute;
-            right: 15px;
-            bottom: 15px;
-            font-size: 24px;
+            right: em(9.375);
+            bottom: em(9.375);
+            font-size: em(16);
             font-weight: 600;
-            padding: 12px 34px;
+            padding: em(7.5) em(21.25);
         }
     }
 
+    // {{cta__title}}
     &__title{
-        font-size: 1.85em;
+        font-size: em(20);
     }
 
+    // {{cta__text}}
     &__text{
-        font-size: 1.35em;
-        font-weight: 600;
+        font-size: em(14);
         line-height: 1.5;
-        margin-bottom: 48px;
+        margin-bottom: em(22);
+        height: 4.5em;
+        overflow: hidden;
     }
 
+    // {{cta__places}}
     &__places{
         position: absolute;
-        left: 42px;
-        bottom: 28px;
+        left: em(20);
+        bottom: em(14);
         font-weight: 600;
         color: #6c9b45;
-        font-size: 23px;
+        font-size: em(17);
     }
 }
 
@@ -181,8 +192,9 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: em(10);
 
+    // {{promotion__img}}
     &__img{
         background-position: top;
         background-repeat: no-repeat;
@@ -194,6 +206,7 @@
         bottom: 0;
     }
 
+    // {{promotion__bottom}}
     &__bottom{
         background-color: white;
         text-align: center;
@@ -201,7 +214,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        padding: 45px 80px 50px;
+        padding: em(45) em(88) em(50);
 
         &:before{
             content: '';
@@ -210,26 +223,27 @@
             bottom: 100%;
             left: 0;
             right: 0;
-            height: 50px;
+            height: em(50);
             background-image: url(../images/paper.png);
             background-repeat: no-repeat;
         }
 
         .btn__sky-blue{
-            font-size: 24px;
+            font-size: em(17);
             font-weight: 600;
-            padding: 12px 60px;
+            padding: em(9) em(44);
         }
     }
 
+    // {{promotion__title}}
     &__title{
-        font-size: 1.85em;
+        font-size: em(20);
     }
 
+    // {{promotion__text}}
     &__text{
-        font-size: 1.35em;
-        font-weight: 600;
+        font-size: em(17);
         line-height: 1.5;
-        margin-bottom: 32px;
+        margin-bottom: em(32);
     }
 }
