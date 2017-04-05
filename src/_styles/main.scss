@@ -302,3 +302,25 @@
         overflow: hidden;
     }
 }
+
+.more{
+    text-align: center;
+    margin-top: em(40);
+
+    // {{more__link}}
+    &__link{
+        display: inline-block;
+        background: transparent url(../images/more.png) center / 100% no-repeat;
+        color: #fff;
+        font-size: em(18);
+        font-weight: 600;
+        padding: em(10) em(40);
+
+        &:visited{
+            color: #fff;
+        }
+        &:hover, &:focus{
+            text-decoration: none;
+        }
+    }
+}
