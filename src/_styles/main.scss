@@ -49,15 +49,50 @@
 
     // {{grid__link}}
     &__link{
+        font-size: 80%;
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
+        text-align: center;
+
+        @include mq(1279px){
+            font-size: 90%;
+        }
+
+        @include mq(1600px){
+            font-size: 100%;
+        }
 
         img{
             width: 100%;
             max-width: 100%;
+        }
+
+        small{
+            color: #fff;
+            display: block;
+            margin-bottom: 0.75em
+        }
+        h1{
+            color: #fff;
+            margin: 0;
+            line-height: 1;
+        }
+
+        // {{grid__link-info}}
+        &-info{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 2.5em 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
         }
     }
 }
