@@ -16,10 +16,22 @@
 // New CSS
 .grid{
     overflow: hidden;
-    margin: em(40) em(8) 0;
+    margin: 40px 8px 0;
+
+    // {{grid--center
+    &--center{
+        text-align: center;
+        font-size: 0;
+
+        > .grid__item{
+            font-size: 15px;
+            float: none;
+        }
+    }
 
     // {{grid__item}}
     &__item{
+        display: inline-block;
         float: left;
         position: relative;
         width: calc(100% - 1.066666666666667em);
@@ -355,7 +367,14 @@
             color: #fff;
         }
         &:hover, &:focus{
+            color: #fff;
             text-decoration: none;
         }
     }
+}
+
+// Overwrite mysmartgarden.css
+.forums__header span{
+    padding: 5px 30px 15px;
+    background: transparent url(../images/bubble.png) center / 100% no-repeat;
 }
